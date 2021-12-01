@@ -1,0 +1,22 @@
+/*======== CTA ========*/
+.banner-sec {
+    text-align: center;
+    color: #FFF;
+    background: #363636;
+    padding: 35px 0;
+    h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    &.v2 {
+        text-align: inherit;
+        @include small(false) {
+            .btn {margin-top: 15px;}
+        };
+    }
+}

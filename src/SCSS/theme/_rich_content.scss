@@ -1,0 +1,68 @@
+/*======== Rich Content ========*/
+.rich-content,.news-post {
+    h1,h2,h3,h4,h5{margin-bottom: 10px;}
+    /*==== Lists ====*/
+    ul,ol,ol.tornado-ui,ul.tornado-ui {
+        &:not(.check-list) {
+            margin-right: 15px;
+            margin-left: 15px;
+            padding: 0 15px;
+            font-weight: $strong-weight;
+        }
+    }
+
+    @include small(false) {
+        p{font-size:15px;}
+    };
+
+    /*======== Hidden Content ========*/
+    .wp-block-paragraph.hidden,h2.hidden,h3.hidden,h4.hidden {
+        display: block;
+        padding: 0;
+        margin: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+
+    /*==== Social Buttons ====*/
+    .social-btns {
+        padding: 15px 30px;
+        margin: -30px -30px;
+        margin-top: 0;
+        border-top:1px solid rgba(#000,0.1);
+        text-align: center;
+        strong {
+            font-size:15px;
+            line-height: 38px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-#{$directionReverse}:10px;
+        }
+        >a{
+            margin: 0 5px;
+            border:1px solid rgba(#000,0.05);
+            border-radius: 5px;
+        }
+    }
+
+    /*======== Gutenberg ========*/
+    .has-text-align-center { @extend .tx-align-center; }
+
+    /*==== Tags ====*/
+    .tags-wraper {
+        margin: 0 -30px;
+        padding: 15px 30px;
+        padding-bottom: 10px;
+        border-top:1px solid rgba(#000,0.1);
+        h3 {
+            font-size:1.25rem;
+            margin-bottom: 5px;
+        }
+        
+        .badge {
+            margin-#{$directionReverse}:10px;
+            margin-bottom: 10px;
+        }
+    }
+}

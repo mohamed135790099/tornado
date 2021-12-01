@@ -1,0 +1,125 @@
+/*======== Contact Info ========*/
+.cinfo-block {
+    margin-top: 30px;
+    .info {
+        width:calc(100% - 74px);
+        padding-#{$direction}: 15px;
+        h3 {font-size: 21px;}
+        p {font-size:16px;}
+    }
+    i {
+        width: 74px;
+        &:before {
+            vertical-align: middle;
+            width: 74px;
+            height: 74px;
+            line-height: 70px;
+            border: 2px solid #FFF;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.contact-us-info {
+    &.col-12{padding: 50px;}
+    background: $primary-color;
+    color: #FFF;
+    .info-box,.sec-head-v3  {
+        max-width: 410px;
+        margin-#{$direction}: auto;
+        margin-#{$directionReverse}: auto;
+    }
+    &.v2 {
+        padding: 0;
+        background: transparent;
+        color: #515151;
+        .sec-head-v3 {
+            max-width: none;
+            margin-#{$direction}: auto;
+            margin-#{$directionReverse}: auto;
+        }
+
+        .cinfo-block i:before {
+            color: #FFF;
+            border: 2px solid $primary-color;
+            background: $primary-color;
+        }
+    }
+}
+
+/*======== Contact US ========*/
+.contact-us-form {
+    &.col-12{padding: 50px;}
+    background: #FFF;
+    &.v2 {
+        padding: 30px 30px;
+        background: transparent;
+    }
+}
+
+.responsive-element.map{padding-bottom: 35%;}
+
+.contact-bg {
+    background: url('../img/mapbg.png');
+    background-size: cover;
+}
+
+/*======== Contact Bar =======*/
+.contact-bar {
+    background: $primary-color;
+    color: #FFF;
+    .col-l-2,.col-m-2 {
+        padding: 25px 0;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .bar-block {
+        padding: 25px 0;
+        h4 {
+            font-size: 15px;
+            line-height: normal;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 3px;
+            &:last-child {margin-bottom: 0;}
+        }
+        span {
+            display: block;
+            font-size:14px;
+            line-height: 25px;
+            margin: 0;
+            padding: 0;
+        }
+        i {
+            width: 85px;
+            &:before {
+                width: 85px;
+                height: 85px;
+                line-height: 83px;
+                font-size: 36px;
+                color: #565656;
+                text-align: center;
+                background: #FFF;
+            }
+        }
+        .info {
+            width:calc(100% - 85px);
+            padding-#{$direction}: 15px;
+        }
+    }
+    &.v2 {
+        background: #f4f4f4;
+        color: #515151;
+        .bar-block i:before {
+            width: 85px;
+            height: 85px;
+            line-height: 75px;
+            font-size: 36px;
+            color: #565656;
+            text-align: center;
+            background: #FFF;
+            border: 4px solid rgba(0, 0, 0, .10);
+        }
+    }
+}

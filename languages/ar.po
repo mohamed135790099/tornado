@@ -1,0 +1,526 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tornado Starter Theme\n"
+"POT-Creation-Date: 2020-06-08 22:53+0200\n"
+"PO-Revision-Date: 2020-06-08 22:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: archive.php:45
+msgid "Sorry no Posts have been found here."
+msgstr "ناسف لم نجد أي مقالات هنا."
+
+#: category.php:35 tag.php:34
+msgid "Sorry no Posts Have been Found."
+msgstr "ناسف لم نجد أي مقالات هنا."
+
+#: comments.php:15
+msgid ""
+"This article is protected by password: Please enter a word to open comments"
+msgstr "هذه المقالة محمية بكلمة مرور: يرجى إدخال كلمة لفتح التعليقات"
+
+#: comments.php:27
+msgid "Please wait for your comment to be approved."
+msgstr "يرجى الانتظار حتى تتم الموافقة على تعليقك."
+
+#: comments.php:47
+msgid "no Comments Yet."
+msgstr "لا توجد تعليقات حتى الآن."
+
+#: comments.php:56
+msgid "Add a Comment"
+msgstr "اضف تعليق"
+
+#: comments.php:59
+msgid "You have to login for posting comments"
+msgstr "يجب عليك تسجيل الدخول لنشر التعليقات"
+
+#: comments.php:60
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: comments.php:67
+msgid "You are currently logged in as "
+msgstr "تم تسجيل دخولك حاليا باسم "
+
+#: comments.php:72
+msgid "Full Name"
+msgstr "الاسم بالكامل"
+
+#: comments.php:76 inc/functions/admin/options-tabs/02-Contact.php:37
+msgid "Email Address"
+msgstr "عنوان بريد الكتروني"
+
+#: comments.php:81
+msgid "Leave Your Comment Here"
+msgstr "اترك تعليقك هنا"
+
+#: comments.php:82
+msgid "Submit Comment"
+msgstr "إرسال التعليق"
+
+#: functions.php:67
+msgid "Blog Sidebar"
+msgstr "الشريط الجانبي للمدونة"
+
+#: functions.php:69
+msgid "Add widgets here."
+msgstr "أضف الحاجيات هنا."
+
+#: functions.php:138
+msgid "Previous Page"
+msgstr "الصفحة السابقة"
+
+#: functions.php:139
+msgid "Next Page"
+msgstr "الصفحة التالية"
+
+#: inc/functions/admin.php:27 inc/functions/admin.php:29
+msgid "Theme Options"
+msgstr "إعدادات القالب"
+
+#: inc/functions/admin.php:45 inc/functions/admin.php:46
+msgid "Menus Settings"
+msgstr "إعدادات القوائم"
+
+#: inc/functions/admin/options-tabs/01-General.php:12
+#: inc/functions/admin/theme-options.php:86
+msgid "General Settings"
+msgstr "الإعدادات العامة"
+
+#: inc/functions/admin/options-tabs/01-General.php:18
+msgid "Meta Options"
+msgstr "إعدادات الميتا"
+
+#: inc/functions/admin/options-tabs/01-General.php:23
+#: inc/functions/admin/options-tabs/01-General.php:24
+msgid "SEO Keywords"
+msgstr "الكلمات المفتاحية"
+
+#: inc/functions/admin/options-tabs/01-General.php:28
+#: inc/functions/admin/options-tabs/01-General.php:29
+msgid "Footer Copyrights"
+msgstr "حقوق الموقع"
+
+#: inc/functions/admin/options-tabs/01-General.php:35
+msgid "Open Graph Cover"
+msgstr "صورة OpenGraph للموقع"
+
+#: inc/functions/admin/options-tabs/01-General.php:46
+msgid "Image URL"
+msgstr "رابط الصورة"
+
+#: inc/functions/admin/options-tabs/01-General.php:49
+msgid "Upload Image"
+msgstr "رقع صورة"
+
+#: inc/functions/admin/options-tabs/01-General.php:60
+msgid "Custom Codes"
+msgstr "أكواد مخصصة"
+
+#: inc/functions/admin/options-tabs/01-General.php:66
+msgid "Header Code"
+msgstr "كود الهيدر"
+
+#: inc/functions/admin/options-tabs/01-General.php:67
+msgid "this code will be added before </head> closing tag"
+msgstr "سيتم اضافة هذا الكود قبل اغلاق وسم </head> لاضافة اكواد CSS/JS"
+
+#: inc/functions/admin/options-tabs/01-General.php:78
+msgid "Body Code"
+msgstr "كود جسم الصفحة"
+
+#: inc/functions/admin/options-tabs/01-General.php:79
+msgid "this code will be added after <body> opening tag"
+msgstr "سيتم إضافة هذا الكود بعد فتحة وسم <body> جسم الصفحة"
+
+#: inc/functions/admin/options-tabs/01-General.php:90
+msgid "Footer Code"
+msgstr "كود الفوتر"
+
+#: inc/functions/admin/options-tabs/01-General.php:91
+msgid "this code will be added before </body> closing tag"
+msgstr "سيتم إضافة هذا الكود قبل اغلاق وسم </body> جسم الصفحة"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:12
+#: inc/functions/admin/theme-options.php:87
+msgid "Contact Info"
+msgstr "معلومات التواصل"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:18
+msgid "Contact Information"
+msgstr "معلومات التواصل"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:23
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:24
+#: inc/functions/admin/options-tabs/02-Contact.php:31
+#: inc/functions/admin/options-tabs/02-Contact.php:52
+#: inc/functions/admin/options-tabs/02-Contact.php:59
+msgid "xx-xxxx-xxx"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:30
+msgid "Phone Number 2nd"
+msgstr "رقم الهاتف الثاني"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:38
+#: inc/functions/admin/options-tabs/02-Contact.php:45
+msgid "example@mail.com"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:44
+msgid "Email Address 2nd"
+msgstr "البريد الالكتروني الثاني"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:51
+msgid "Whatsapp Number"
+msgstr "رقم الواتس اب"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:58
+msgid "Whatsapp Number 2nd"
+msgstr "رقم الواتس اب الثاني"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:65
+msgid "Branch Location"
+msgstr "عنوان الشركة"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:66
+msgid "egypt, beni-suef, al-wasta"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:77
+msgid "Social Media"
+msgstr "التواصل الاجتماعي"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:82
+msgid "Facebook url"
+msgstr "رابط فيس بوك"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:83
+msgid "https://fb.com/username"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:89
+msgid "Twitter url"
+msgstr "رابط تويتر"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:90
+msgid "https://twitter.com/@username"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:96
+msgid "Instagram url"
+msgstr "رابط انستاجرام"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:97
+msgid "https://instagram.com/username"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/02-Contact.php:103
+msgid "Linked-in url"
+msgstr "رابط لينكد إن"
+
+#: inc/functions/admin/options-tabs/02-Contact.php:104
+msgid "https://linkedin.com/@username"
+msgstr ""
+
+#: inc/functions/admin/options-tabs/03-Design.php:28
+#: inc/functions/admin/theme-options.php:88
+msgid "Design Options"
+msgstr "إعدادات التصميم"
+
+#: inc/functions/admin/options-tabs/03-Design.php:41
+msgid "Logo and Colors"
+msgstr "اللوجو والالوان"
+
+#: inc/functions/admin/options-tabs/03-Design.php:46
+msgid "Theme Logo"
+msgstr "لوجو الموقع"
+
+#: inc/functions/admin/options-tabs/03-Design.php:67
+msgid "Theme Logo Mobile"
+msgstr "لوجو الموقع للموبايل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:89
+msgid "Primary Color"
+msgstr "اللون الاساسي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:90
+msgid "Theme Design Primary Color"
+msgstr "اللون الأساسي للتصميم"
+
+#: inc/functions/admin/options-tabs/03-Design.php:103
+msgid "Primary Hover"
+msgstr "تأثير اللون الاساسي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:104
+msgid "Theme Design Primary Hover Effect Color"
+msgstr "تأثير اللون الأساسي عند مرور الماوس"
+
+#: inc/functions/admin/options-tabs/03-Design.php:117
+msgid "Secondary Color"
+msgstr "اللون الثانوي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:118
+msgid "Theme Design Secondary Color"
+msgstr "اللون الثانوي للتصميم"
+
+#: inc/functions/admin/options-tabs/03-Design.php:131
+msgid "Secondary Hover"
+msgstr "تأثير اللون الثانوي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:132
+msgid "Theme Design Secondary Hover Effect Color"
+msgstr "تأثير اللون الثانوي عند مرور الماوس"
+
+#: inc/functions/admin/options-tabs/03-Design.php:145
+msgid "Text Color"
+msgstr "لون النصوص"
+
+#: inc/functions/admin/options-tabs/03-Design.php:146
+msgid "Theme Design Text Color"
+msgstr "لون النصوص الافتراضى للتصميم"
+
+#: inc/functions/admin/options-tabs/03-Design.php:163
+msgid "Font Options"
+msgstr "إعدادات الخطوط"
+
+#: inc/functions/admin/options-tabs/03-Design.php:169
+msgid "Google Fonts"
+msgstr "خطوط جوجل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:170
+msgid "Enable/Disable Google Fonts"
+msgstr "تفعيل او تعطيل خطوط جوجل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:182
+#: inc/functions/admin/options-tabs/03-Design.php:270
+msgid "Headers Font"
+msgstr "نوع خط العناوين"
+
+#: inc/functions/admin/options-tabs/03-Design.php:183
+#: inc/functions/admin/options-tabs/03-Design.php:227
+#: inc/functions/admin/options-tabs/03-Design.php:271
+msgid "Headers and Titles Font Family"
+msgstr "اسم عائلة خط العناوين"
+
+#: inc/functions/admin/options-tabs/03-Design.php:204
+#: inc/functions/admin/options-tabs/03-Design.php:280
+msgid "Normal Font"
+msgstr "نوع الخط العادي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:205
+#: inc/functions/admin/options-tabs/03-Design.php:249
+#: inc/functions/admin/options-tabs/03-Design.php:281
+msgid "Normal Text Font Family"
+msgstr "اسم عائلة الخط العادي لباقي القطع الكتابية"
+
+#: inc/functions/admin/options-tabs/03-Design.php:226
+#: inc/functions/admin/options-tabs/03-Design.php:290
+msgid "Headers Font RTL"
+msgstr "نوع خط العناوين للـRTL"
+
+#: inc/functions/admin/options-tabs/03-Design.php:248
+#: inc/functions/admin/options-tabs/03-Design.php:300
+msgid "Normal Font RTL"
+msgstr "نوع الخط العادي للـRTL"
+
+#: inc/functions/admin/options-tabs/03-Design.php:291
+msgid "Headers and Titles Font Family RTL"
+msgstr "اسم عائلة خط العناوين للــ RTL"
+
+#: inc/functions/admin/options-tabs/03-Design.php:301
+msgid "Normal Text Font Family RTL"
+msgstr "اسم عائلة الخط العادي لباقي القطع الكتابية  للــ RTL"
+
+#: inc/functions/admin/options-tabs/03-Design.php:310
+msgid "Font Normal Weight"
+msgstr "وزن الخط العادي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:311
+msgid "Font Normal/Regular Weight."
+msgstr "الوزن العادي للخطوط والنصوص بالارقام."
+
+#: inc/functions/admin/options-tabs/03-Design.php:330
+msgid "Font Medium Weight"
+msgstr "وزن الخط المتوسط"
+
+#: inc/functions/admin/options-tabs/03-Design.php:331
+msgid "Font Medium/Semi-Bold Weight."
+msgstr "الوزن المتوسط للخطوط والنصوص بالارقام."
+
+#: inc/functions/admin/options-tabs/03-Design.php:350
+msgid "Font Bold Weight"
+msgstr "وزن الخط السميك"
+
+#: inc/functions/admin/options-tabs/03-Design.php:351
+msgid "Font Bold Weight."
+msgstr "وزن الخط السميك."
+
+#: inc/functions/admin/options-tabs/03-Design.php:370
+msgid "Font Size"
+msgstr "حجم الخط الاساسي"
+
+#: inc/functions/admin/options-tabs/03-Design.php:371
+msgid "Desktop Base Font Size in px"
+msgstr "حجم الخط الأساسي لشاشات الديسك توب بالبيكسل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:380
+msgid "Tablet Font Size"
+msgstr "حجم خط التابلت"
+
+#: inc/functions/admin/options-tabs/03-Design.php:381
+msgid "Tablet Base Font Size in px"
+msgstr "حجم الخط الأساسي لشاشات التابلت بالبيكسل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:390
+msgid "Mobile Font Size"
+msgstr "حجم خط الموبايل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:391
+msgid "Mobile Base Font Size in px"
+msgstr "حجم الخط الأساسي لشاشات الموبايل بالبيكسل"
+
+#: inc/functions/admin/options-tabs/03-Design.php:400
+msgid "Font Line-Height"
+msgstr "طول سطر النصوص"
+
+#: inc/functions/admin/options-tabs/03-Design.php:401
+msgid "Font Base Line Hight in points or precentage"
+msgstr "طول سطر النصوص والمسافة بين السطر والاخر"
+
+#: inc/functions/admin/theme-options.php:121
+msgid "Powered by Tornado UI v2 Framework © 2016 - 2020"
+msgstr "مدعوم من Tornado UI v2 Framework © 2016-2020"
+
+#. Template Name of the plugin/theme
+#: inc/functions/custom-post-types.php:18
+msgid "Blog"
+msgstr "المدونة"
+
+#: inc/functions/custom-post-types.php:39
+msgid "Categories"
+msgstr "الاقسام"
+
+#: inc/template-parts/blogs/blog-details.php:21
+msgid "Posted on"
+msgstr "تم نشرة في"
+
+#: inc/template-parts/blogs/blog-details.php:22
+msgid "no comments"
+msgstr "لا توجد تعليقات حتى الآن"
+
+#: inc/template-parts/blogs/blog-details.php:22
+msgid "one comment"
+msgstr "تعليق واحد"
+
+#: inc/template-parts/blogs/blog-details.php:22
+msgid "comments"
+msgstr "لا توجد تعليقات حتى الآن"
+
+#: inc/template-parts/blogs/blog-details.php:23
+msgid "view"
+msgstr "مشاهدة"
+
+#: inc/template-parts/blogs/blog-details.php:27
+msgid "share"
+msgstr "مشاركة"
+
+#: search.php:18
+msgid "Search Resault for "
+msgstr "نتائج البحث "
+
+#: search.php:27
+msgid "No results found for "
+msgstr "لا يوجد نتائج لــ "
+
+#: search.php:27
+msgid "Try Another Keywords "
+msgstr "جرب كلمات بحث اخري "
+
+#: searchform.php:9
+msgid "Quick Search"
+msgstr "بحث سريع"
+
+#: searchform.php:11
+msgid "Search Keywords"
+msgstr "كلمات البحث"
+
+#: sidebar.php:13
+msgid "Sidebar is not ativated"
+msgstr "الشريط الجانبي غير مفعل"
+
+#: src/php/gutenberg.php:13
+msgid "Tornado Blocks"
+msgstr ""
+
+#: src/php/gutenberg.php:18
+msgid "Design Blocks"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Tornado Starter Theme"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/EngCode/Tornado-v2"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This is a Clean Theme Framework based on Tornado UI Framework."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Abdullah Ramadan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://phenixthemes.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Error 404"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Default Pages"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Default Rich Content"
+msgstr ""
+
+#~ msgid "Font Bold Weight in Numbers."
+#~ msgstr "الوزن السميك للخطوط والنصوص بالارقام"
+
+#~ msgid "Select"
+#~ msgstr "اختيار"
+
+#~ msgid "Preview"
+#~ msgstr "معاينة"
+
+#~ msgid "Change"
+#~ msgstr "تغيير"

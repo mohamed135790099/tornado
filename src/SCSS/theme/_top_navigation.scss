@@ -1,0 +1,62 @@
+/*======== Top Navigation ========*/
+.top-navigation {
+    background: #f2f2f2;
+    border-bottom: 1px solid rgba(0, 0, 0, .10);
+    font-size: 14px;
+    line-height: 42px;
+    color: #6b6b6b;
+    position: relative;
+    z-index: 101;
+    &::after { @extend .clear-after,:after; }
+    /*==== info ====*/
+    span {
+        display: inline-block;
+        margin-#{$directionReverse}: 20px;
+        @include small(false) {display: none;}
+        &:before {
+            margin-#{$directionReverse}: 10px;
+            font-size: 16px;
+        }
+    }
+    /*==== Social ====*/
+    .social {
+        float: #{$directionReverse};
+        a {
+            margin-#{$direction}: 15px;
+            font-size: 16px;
+            color: #bebebe;
+            transition: all .3s;
+            &:hover{color: $primary-color;}
+        }
+    }
+    /*==== V2 ====*/
+    &.v2 {
+        background: #535353;
+        border-bottom: 1px solid rgba(0, 0, 0, .10);
+        font-size:15px;
+        line-height: 50px;
+        color: #fff;
+        position: relative;
+        z-index: 101;
+        .social a {
+            position: relative;
+            top: -2px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            margin-#{$direction}: 8px;
+            font-size: 14px;
+            color: #565656;
+            background: #FFF;
+            border-radius: 50%;
+            &:hover {
+                color: #FFF;
+                background: $primary-color;
+            }
+        }
+    }
+}
+

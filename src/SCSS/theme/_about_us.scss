@@ -1,0 +1,149 @@
+/*======== About US Section ========*/
+.about-us,.our-vision,.our-mission {
+    background: $primary-color;
+    color: #FFF;
+    &.v2.inside {
+        background: $secondary-color;
+    }
+    .col-m-7 {
+        padding: 80px 35px;
+    }
+
+    .content-box {
+        height: 100%;
+        background: #FFF;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        .button {
+            position: absolute;
+            bottom: 32px;
+            #{$directionReverse}: 50%;
+            transform: translateX(-50%);
+            width: 185px;
+            height: 52px;
+            font-size:16px;
+            line-height: 52px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, .10);
+            border-radius: 60px;
+            transition: all 0.3s;
+            :hover {
+                background: $primary-color;
+                color: #FFF;
+            }
+        }
+        img {margin-top: -20px;}
+    }
+
+    p {
+        text-align: justify;
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    h3 {
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    /*======== V3 ========*/
+    &.v3 {
+        .content-box {
+            min-height: 500px;
+            overflow: hidden;
+            background: #363636;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: relative;
+            transform: translateZ(0);
+        }
+        p,h3 {
+            max-width: 730px;
+            margin-#{$direction}: auto;
+            margin-#{$directionReverse}: auto;
+            font-weight: 700;
+        }
+        @media only screen and (min-width:1024px) {
+            .content-box {background: transparent;}
+
+            .content-box:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                #{$direction}: -33%;
+                width: 120%;
+                background: #363636;
+                transform: skewX(20deg);
+                z-index: -1;
+            }
+
+            .row-reverse .content-box:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                #{$direction}: auto;
+                #{$directionReverse}: -33%;
+                width: 120%;
+                background: #363636;
+                transform: skewX(20deg);
+                z-index: -1;
+            }
+        }
+        &.inside {background: #50abf9;}
+    }
+    /*======== V4 ========*/
+    &.v4 .content-box {
+        background: #222;
+        padding: 30px;
+        img {max-width: 245px;}
+    }
+    /*==== V5 ====*/
+    &.v5 {
+        text-align: center;
+        padding: 50px;
+        background: $primary-color;
+        &.inside {background: #404040;}
+        p {
+            max-width: 715px;
+            margin-#{$direction}: auto;
+            margin-#{$directionReverse}: auto;
+        }
+    }
+}
+
+/*======== Our Vision ========*/
+.our-vision {
+    background: #282828;
+    color: #FFF;
+    &.v2{background: $primary-color;}
+    &.v3 {background: $secondary-color;}
+    &.v4 {
+        margin-top: 30px;
+        background: $secondary-color;
+    }
+    &.v5 {background: $secondary-color;}
+}
+
+/*======== Our Mission ========*/
+.our-mission {
+    background: $secondary-color;
+    color: #FFF;
+    &.v2{background: #3f3f3f;}
+    &.v3 {background: #d7ab27;}
+    &.v4 {
+        margin-top: 30px;
+        background: $secondary-color-hover;
+    }
+    &.v5 {background: $secondary-color-hover;}
+}
+

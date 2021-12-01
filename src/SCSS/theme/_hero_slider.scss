@@ -1,0 +1,112 @@
+.hero-slider {
+    .row {
+        min-height:calc(100vh - 112px);
+        text-align: center;
+        color: #FFF;
+
+        h4 {
+            font-size: 1.25rem;
+            line-height: normal;
+            margin: 0;
+            padding: 0;
+            visibility: visible;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size:1rem;
+            text-align: justify;
+            -moz-text-align-last: center;
+            text-align-last: center;
+            visibility: visible;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            visibility: visible;
+        }
+    }
+
+    .item {
+        position: relative;
+        .overlink {
+            display: block;
+            position: absolute;
+            #{$directionReverse}: 0;
+            top: 0;
+            bottom: 0;
+            #{$direction}: 0;
+            background: rgba(0, 0, 0, .70);
+            z-index: 0;
+        }
+
+        &.tns-slide-active h4 {
+            -webkit-animation: fadeInUp 1s both;
+            animation: fadeInUp 1s both .6s;
+            visibility: visible;
+        }
+        
+        &.tns-slide-active p {
+            -webkit-animation: fadeInUp 1s both .2s;
+            animation: fadeInUp 1s both .9s;
+            visibility: visible;
+        }
+        
+        &.tns-slide-active .btn {
+            -webkit-animation: fadeInUp 1s both .4s;
+            animation: fadeInUp 1s both 1.2s;
+            visibility: visible;
+        }
+        
+        &.tns-slide-active img {
+            -webkit-animation: fadeInEnd 1s both;
+            animation: fadeInEnd 1s both;
+            visibility: visible;
+        }
+    }
+
+    &.v3 .item{padding-top: 70px;}
+}
+
+.hero-slider-outer .tns-controls button {
+    width:50px;
+    height: 75px;
+    line-height: 75px;
+    opacity: 1;
+    border-radius: 0;
+    color:#FFF;
+    background:rgba(#FFF, 0.10);
+    border:0 none;
+    &[data-controls="prev"] {#{$directionReverse}:0;}
+    &[data-controls="next"] {#{$direction}:0;}
+}
+
+.wp-admin .hero-slider .row {
+    p,h4{visibility: visible;}
+}
+
+/*======== Home Slider ========*/
+.home-slider [data-src] {
+    padding-bottom: 56%;
+    position: relative;
+    .info {
+        position: absolute;
+        #{$directionReverse}: 0;
+        #{$direction}: 0;
+        bottom: 0;
+        color: #FFF;
+        padding: 20px;
+        background: rgba(0, 0, 0, .80);
+        h3 {
+            color: #FFF;
+            font-size: 18px;
+            line-height: normal;
+        }
+        p {
+            font: 600 15px/30px 'Cairo';
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+}

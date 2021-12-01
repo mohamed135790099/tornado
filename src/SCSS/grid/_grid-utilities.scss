@@ -1,0 +1,145 @@
+/*=== Grid Utilities ===*/
+.col-auto{
+    flex-grow: 1;
+} /* column takes the remaining space of the row */
+
+.align-center-z{
+    align-items: center;
+    justify-content: center;
+} /* Align Columns Centered Vertical and Horizontal */
+
+.align-center-x{
+    justify-content:center;
+} /* Horizontaly Align Columns to the Center */
+
+.align-start-x{
+    justify-content: flex-start;
+} /* Horizontaly Align Columns to the Direction start point */
+
+.align-end-x{
+    justify-content: flex-end;
+} /* Horizontaly Align Columns to the Direction end point */
+
+.align-around{
+    justify-content: space-around;
+} /* Horizontaly Align and spliting the space around Columns */
+
+.align-between{
+    justify-content: space-between;
+} /* Horizontaly Align and spliting the space between Columns */
+
+.align-start-y{
+    align-items: flex-start;
+} /* Vertical Align Columns to the top */
+
+.align-center-y{
+    align-items: center;
+} /* Vertical Align Columns to the Center */
+
+.align-end-y{
+    align-items: flex-end;
+} /* Vertical Align Columns to the bottom */
+
+.align-self-start{
+    align-self: flex-start;
+} /* Vertical Align item to the top */
+
+.align-self-center{
+    align-self: center;
+} /* Vertical Align item to the Center */
+
+.align-self-end{
+    align-self: flex-end;
+} /* Vertical Align item to the bottom */
+
+/*========== Display Settings =========*/
+.hidden{display: none;}
+/*=== Small Screen ===*/
+@include small(true) { 
+    .hidden-s-up{display: none!important;} 
+    .show-s-up{display: block!important;} 
+}
+
+@include small(false) { 
+    .hidden-s-down{display: none!important;} 
+    .show-s-down{display: block!important;} 
+}
+
+/*=== Medium Screen ===*/
+@include medium(true) { 
+    .hidden-m-up{display: none!important;} 
+    .show-m-up{display: block!important;} 
+}
+
+@include medium(false) { 
+    .hidden-m-down{display: none!important;}
+    .show-m-down{display: block!important;}
+}
+/*=== Large Screen ===*/
+@include large(true) { 
+    .hidden-l-up{display: none!important;} 
+    .show-l-up{display: block!important;} 
+}
+
+@include large(false) { 
+    .hidden-l-down{display: none!important;}
+    .show-l-down{display: block!important;}
+}
+
+/*=== Extra Large Screen ===*/
+@include xlarge(true) { 
+    .hidden-xl-up{display: none!important;} 
+    .show-xl-up{display: block!important;} 
+}
+
+@include xlarge(false) { 
+    .hidden-xl-down{display: none!important;} 
+    .show-xl-down{display: block!important;} 
+}
+
+/*==== Gutters ====*/
+.no-gutter{
+    margin:0 0;
+    >[class*="col-"],>[class*="box-"] {
+        padding:0 0;
+    }
+} // Decrease Columns Gutter To 0 
+
+.gutter-small > [class*="col-"],.gutter-small > [class*="box-"] ,.wrap-gutter-s{
+    padding:0 5px;
+} // Decrease Columns Gutter To 50% 
+
+.gutter-medium > [class*="col-"],.gutter-medium > [class*="box-"] ,.wrap-gutter-m{
+    padding:0 10px;
+} // Increase Columns Gutter To 150% */
+
+.gutter-large > [class*="col-"],.gutter-large > [class*="box-"] ,.wrap-gutter-l{
+    padding:0 20px;
+} // Increase Columns Gutter 200%
+
+/*=== Fix Gutters ===*/
+.gutter-small{
+    margin-#{$direction}:-10px;
+    margin-#{$directionReverse}:-10px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.gutter-medium{
+    margin-#{$direction}:-10px;
+    margin-#{$directionReverse}:-10px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.gutter-large{
+    margin-#{$direction}:-20px;
+    margin-#{$directionReverse}:-20px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.line-break,.block-lvl {
+    display:block;
+    width:100%;
+}

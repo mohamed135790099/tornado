@@ -1,0 +1,198 @@
+/*======== Standard Header ========*/
+.tornado-header {
+    background: #FFF;
+    z-index: 100;
+    position: relative;
+    @extend %fast-motion;
+    //=== Container Layout ===//
+    .container,.container-fluid,.container-xl {
+        @extend %flexbox;
+        @extend .align-between;
+        @extend .align-center-y;
+        min-height: 70px;
+        &::after{ display: none; }
+    }
+    //=== Logo ===//
+    .logo img {max-height: 42px;}
+    @include small(false) {
+        .logo img {max-width: 110px;}
+    };
+
+    //=== Actions Buttons ===*/
+    .icon-btn {
+        font-size:22px;
+        color:$gray-color;
+        width:42px;
+        height: 42px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 42px;
+        text-align: center;
+        position: relative;
+    }
+
+    //=== Search Box ===*/
+    .search-box {
+        position: relative;
+        max-width:290px;
+        display: inline-block;
+        vertical-align: middle;
+        @include small(false) {display: none;}
+        /*======== Reset ========*/
+        input:not(.btn),select {margin-bottom: 0;}
+
+        /*======== Controls ========*/
+        input:not(.btn) {
+            border-radius: 5px;
+            width:auto;
+            height: 42px;
+        }
+
+        /*======== Button ========*/
+        .search-btn {
+            position: absolute;
+            top:0;
+            #{$directionReverse}:0;
+            background:transparent;
+            color:$gray-color;
+            width:42px;
+            height: 42px;
+            font-size:18px;
+            border:0 none;
+            cursor: pointer;
+            @if ($page-dir == 'ltr') {border-radius: 0 5px 5px 0;}
+            @else {border-radius: 5px 0 0 5px;}
+        }
+    }
+
+    /*==== V2 ====*/
+    &.v2 {
+        .navigation-menu > ul > li {
+            line-height: 38px;
+            border-radius: 5px;
+            &:hover {
+                background-color: $primary-color;
+                color:#FFF;
+            }
+        }
+    }
+
+    /*==== V3 ====*/
+    &.v3 {
+        background: rgba(255, 255, 255, .05);
+        position: absolute;
+        top: 0;
+        #{$directionReverse}: 0;
+        #{$direction}: 0;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        /*==== Inner Pages ====*/
+        &.inner {
+            position: static;
+            background: url('../img/slide2.png') center;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                #{$directionReverse}: 0;
+                top: 0;
+                bottom: 0;
+                #{$direction}: 0;
+                background: rgba(0, 0, 0, .70);
+                z-index: -1;
+            }
+        }
+        /*==== Menu ====*/
+        .navigation-menu > ul > li {
+            line-height: 38px;
+            border-radius: 5px;
+            color:#FFF;
+            &:hover {
+                background-color: $primary-color;
+                color:#FFF;
+            }
+        }
+        /*==== Icon Btns ====*/
+        .icon-btn {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            &:not(.menu-btn) {display: inline-block;}
+            vertical-align: middle;
+            margin-#{$direction}: 8px;
+            font-size: 14px;
+            color: #565656;
+            background: #FFF;
+            border-radius: 50%;
+            transition: all .3s;
+            &:hover {
+                color: #FFF;
+                background: $primary-color;
+            }
+        }
+    }
+
+    /*==== V4 ====*/
+    &.v4 {
+        /*==== icon btns ====*/
+        .icon-btn {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            &:not(.menu-btn) {display: inline-block;}
+            vertical-align: middle;
+            font-size: 14px;
+            color: #565656;
+            background: #FFF;
+            border-radius: 50%;
+            transition: all .3s;
+            &:hover {
+                color: #FFF;
+                background: $primary-color;
+            }
+        }
+    }
+
+    /*==== V5 ====*/
+    &.v5 {
+        background-color: $primary-color;
+        /*==== Menu ====*/
+        .navigation-menu > ul > li {
+            line-height: 38px;
+            border-radius: 5px;
+            color:#FFF;
+            &:hover {
+                background-color: $primary-color;
+                color:#FFF;
+            }
+        }
+        /*==== icon btns ====*/
+        .icon-btn {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            &:not(.menu-btn) {display: inline-block;}
+            vertical-align: middle;
+            font-size: 14px;
+            color: #565656;
+            background: #FFF;
+            border-radius: 50%;
+            transition: all .3s;
+            &:hover {
+                color: #FFF;
+                background: $primary-color;
+            }
+        }
+    }
+}

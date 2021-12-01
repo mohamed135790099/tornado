@@ -1,0 +1,31 @@
+.pagination {
+    @extend %reset;
+    word-spacing: -5px;
+    li {
+        word-spacing: normal;
+        display: inline-block;
+        padding:0 0.9375rem;
+        height:2.625rem;
+        line-height: 2.5rem;
+        font-size: 0.9375rem;
+        color:$reverse-color;
+        background:$primary-color;
+        @extend %normal-motion;
+        text-align: center;
+        font-weight:$medium-weight;
+        span,a {
+            color: inherit;
+            display: block;
+            padding:0 0.9375rem;
+            margin: 0 -0.9375rem;
+        }
+        border:1px solid rgba(0,0,0,0.10);
+        &.current,&.active {
+            background:$dark-color;
+            color:$reverse-color;
+            span,a{color:inherit;}
+        }
+    }
+    /*======== Separated Theme ========*/
+    &.separate {word-spacing: 10px;}
+}

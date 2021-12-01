@@ -1,0 +1,96 @@
+/*======== Footer ========*/
+.footer-box {
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-footer {
+    background: url('../img/bg2.png');
+    background-size: cover;
+    color: #FFF;
+    .about-fo {max-width: 370px;}
+    ul{@extend %reset;}
+    /*==== Content ====*/
+    h2 {
+        font-size: 19px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size:14px;
+        color: #cecfcf;
+        text-align: justify;
+    }
+    /*==== Links ====*/
+    .links-fo {
+        max-width: 170px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                font-size:15px;
+                line-height: 30px;
+                color: #cecfcf;
+                a {color: #cecfcf;transition: all 0.3s;}
+                &:hover a {color: $primary-color;}
+            }
+        }
+    }
+    /*==== Contact ====*/
+    .contact-fo {
+        max-width: 170px;
+        .ui-tornado li {
+            font-size:15px;
+            line-height: 30px;
+            color: #cecfcf;
+            margin: 0;
+            &::before{margin-#{$directionReverse}:5px;}
+        }
+    }
+    /*==== Social ====*/
+    .social {
+        margin-top: 15px;
+        a {
+            font-size: 17px;
+            line-height: 30px;
+            display: inline-block;
+            padding: 0 7.5px;
+            color: #FFF;
+            transition: all 0.3s;
+            &:hover {color: $primary-color;}
+        }
+    }
+    
+    /*==== Copyrights ====*/
+    .copyrights {
+        font-size:15px;
+        line-height: 65px;
+        color: #FFF;
+        border-top: 1px solid rgba(255, 255, 255, .10);
+        &::after{ @extend .clear-after,:after; }
+    }
+    
+    .copyrights .mahacode {float: #{$directionReverse};}
+    /*==== Light ====*/
+    &.light {
+        background: url('../img/bg4.png');
+        background-size: cover;
+        color: #515151;
+        border-top: 1px solid rgba(0, 0, 0, .10);
+        p {color: #757575;}
+        .links-fo ul li {
+            color: #757575;
+            a {color: #757575;}
+        }
+        .contact-fo .ui-tornado li {color: #757575;}
+        .social a {color: #757575;}
+        .copyrights {
+            color: #757575;
+            border-top: 1px solid rgba(0, 0, 0, .10);
+        }
+    }
+}

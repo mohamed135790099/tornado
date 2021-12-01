@@ -1,0 +1,38 @@
+/* Layout Responsive */
+@media only screen and (min-width:980px) {
+    .comment-block.sub-comment {margin-#{$directionReverse}: 10%;}
+    .about-us.v4 .col-l-3 {width: 30%;}
+    .about-us.v4 .col-l-9 {width: 70%;}
+}
+
+@media only screen and (max-width:640px) {
+    .contact-bar {padding:30px;}
+    header.v2 .header-search,
+    header.v3 .social {display: none;}
+}
+
+@media only screen and (max-width:480px) {
+    .page-head.v2:before {width: 60%;}
+
+    footer {
+        padding: 0 30px;
+        .links-fo {max-width: none;width: 100%;}
+    }
+    
+    .top-navigation {
+        text-align: center;
+        .social {display: block;float: none;}
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .contact-bar .bar-block i {display: none;}
+    footer .copyrights {
+        text-align: center;
+        .mahacode {
+            float: none;
+            display: block;
+            margin: auto;
+        }
+    }
+}
